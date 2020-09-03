@@ -5,7 +5,7 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
 import MessageIcon from '@material-ui/icons/Message';
 import ShareIcon from '@material-ui/icons/Share';
 
-const VideoSidebar = () => {
+const VideoSidebar = ({ likes, shares, messages }) => {
   const [isLiked, setIsLiked] = useState(false);
 
   return (
@@ -22,17 +22,17 @@ const VideoSidebar = () => {
                 onClick={(e) => setIsLiked(true)}
               />
         } 
-        <p>{isLiked ? 420 : 419}</p>
+        <p>{isLiked ? likes+1 : likes}</p>
       </div>
 
       <div className="videoSidebar__button">
         <MessageIcon fontSize="large" />
-        <p>11</p>
+        <p>{messages}</p>
       </div>
 
       <div className="videoSidebar__button">
         <ShareIcon fontSize="large" />
-        <p>23</p>
+      <p>{shares}</p>
       </div>
     </div>
   );
