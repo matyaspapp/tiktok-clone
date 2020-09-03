@@ -9,10 +9,12 @@ import Video from './Components/Video';
 function App() {
   return (
     <div className="app">
-      <Video />
-      <Video />
-      <Video />
-      <Video />
+      <div className="app__videos">
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+      </div>
     </div>
   );
 }
