@@ -4,11 +4,15 @@
 */
 import React from 'react';
 import './App.css';
+import Video from './Components/Video';
 
 function App() {
   return (
     <div className="app">
-      Cleaned up!
+      <Video />
+      <Video />
+      <Video />
+      <Video />
     </div>
   );
 }
